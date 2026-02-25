@@ -56,9 +56,11 @@
 | ID | Descripción | Prioridad | Criterio de Aceptación |
 | :--- | :--- | :--- | :--- |
 | **RF-01** | Validar credenciales (Login) | Must | [cite_start]Bloqueo tras 3 intentos fallidos[cite: 47]. |
+! **RF-01.01**|
 | **RF-02** | Gestión de solicitudes de crédito | Must | [cite_start]Crear, editar y consultar sin errores[cite: 48, 49, 50]. |
 | **RF-03** | Evaluaciones financieras automáticas | Must | [cite_start]Cálculos correctos y reportes exportables[cite: 53, 54, 55]. |
 | **RF-04** | Integración API REST con CORE | Must | [cite_start]Validación JWT e intercambio JSON exitoso[cite: 57, 58, 59]. |
+|**RF -04.01**|
 | **RF-05** | Reportes automáticos (PDF/Excel) | Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
 | **RF-06** | Logs de auditoría | Must | [cite_start]Registro de usuario, fecha y acción[cite: 64, 65, 66, 67]. |
 | **RF-07** | Administración de roles y perfiles | Must | [cite_start]Gestión de permisos sin afectar otros usuarios[cite: 68, 69, 70, 71]. |
@@ -86,3 +88,4 @@
 
 **Firma:** __________________________  
 [cite_start]**Fecha:** __________________ [cite: 114, 115]
+
