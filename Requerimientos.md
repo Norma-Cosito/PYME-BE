@@ -59,10 +59,26 @@
 ! **RF-01.01**|
 | **RF-02** | Gestión de solicitudes de crédito | Must | [cite_start]Crear, editar y consultar sin errores[cite: 48, 49, 50]. |
 | **RF-03** | Evaluaciones financieras automáticas | Must | [cite_start]Cálculos correctos y reportes exportables[cite: 53, 54, 55]. |
+| **RF-03.01** | Carga de Datos y Consolidación: El sistema debe permitir ingresar el balance general y el estado de resultados (o los datos equivalentes para micro-segmentos que no llevan contabilidad formal). Queremos que, al ingresar estos datos, el sistema calcule automáticamente los ratios financieros estándar: liquidez, solvencia, rotación de inventarios, etc. | Must | [cite_start]Cálculos correctos y reportes exportables[cite: 53, 54, 55]. |
+| **RF-03.02** | Capacidad de Pago: Esta es la "joya de la corona". Necesitamos que el software proyecte el flujo de caja del cliente y determine, de manera automática, cuánto puede pagar mensualmente sin asfixiar su negocio. Si el oficial cambia una variable (como el plazo del crédito), el cálculo de la capacidad de pago debería actualizarse al instante.| Must | [cite_start]Cálculos correctos y reportes exportables[cite: 53, 54, 55]. |
+| **RF-03.03** | Análisis Comparativo: Nos gustaría que el sistema compare los indicadores del cliente actual con promedios del mismo sector (por ejemplo, comparar una manufacturera de muebles con el promedio de ese rubro).| Must | [cite_start]Cálculos correctos y reportes exportables[cite: 53, 54, 55]. |
 | **RF-04** | Integración API REST con CORE | Must | [cite_start]Validación JWT e intercambio JSON exitoso[cite: 57, 58, 59]. |
-|**RF -04.01**|
+| **RF-04.01** | Consulta de Datos del Cliente (GET): Cuando un oficial inicia una solicitud, el sistema debe "llamar" al Core mediante la API para verificar si el cliente ya existe. Necesitamos traer de vuelta sus datos básicos, su historial de créditos actuales, sus saldos en cuentas y, muy importante, su calificación de riesgo vigente en el sistema.| Must | [cite_start]Validación JWT e intercambio JSON exitoso[cite: 57, 58, 59]. |
+| **RF-04.02** | Sincronización de Tablas Maestras: El software de la consultoría debe estar alimentado por las tasas de interés, plazos máximos y tipos de garantías que el Core tiene parametrizados. No queremos que un oficial de crédito use una tasa que ya caducó.| Must | [cite_start]Validación JWT e intercambio JSON exitoso[cite: 57, 58, 59]. |
+| **RF-04.03** | Escritura de la Operación (POST/PUT): Una vez que el crédito es aprobado en la nueva plataforma, toda la estructura (plan de pagos, datos de la garantía, condiciones) debe "viajar" al Core para su desembolso. No queremos que nadie tenga que transcribir datos manualmente del software nuevo al Core antiguo. Eso es fuente de errores. | Must | [cite_start]Validación JWT e intercambio JSON exitoso[cite: 57, 58, 59]. |
 | **RF-05** | Reportes automáticos (PDF/Excel) | Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
+| **RF-05.01** | Informe de Propuesta de Crédito (PDF): Este es un documento formal, con el logo del BDP, que resume toda la evaluación. Debe incluir:
+Datos generales del cliente y su unidad productiva.
+Cuadros de estados financieros comparativos.
+El análisis de los ratios que mencionamos antes.
+La conclusión del oficial de crédito.
+Nota importante: Este PDF debe ser "no editable" para garantizar la integridad de la información que llega al comité.| Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
+| **RF-05.02** | Plan de Pagos Proyectado (PDF/Excel): Un documento que el oficial pueda entregarle al cliente ahí mismo, en su negocio, para que vea cómo quedarían sus cuotas.qa| Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
+| **RF-05.03** | Generación de Reportes de Seguimiento y Mora en formato Excel: El sistema deberá permitir al Gerente generar un archivo en formato Excel que consolide información actualizada sobre el estado de las solicitudes y el desempeño de los oficiales.| Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
 | **RF-06** | Logs de auditoría | Must | [cite_start]Registro de usuario, fecha y acción[cite: 64, 65, 66, 67]. |
+| **RF-06.01** | | Trazabilidad de Decisiones de Crédito: El sistema permitirá verificar de manera transparente y auditable todo el proceso de aprobación de un crédito (por ejemplo, uno de 100.000 bolivianos), asegurando control interno y cumplimiento normativo.| [cite_start]Registro de usuario, fecha y acción[cite: 64, 65, 66, 67]. |
+| **RF-06.02** | Control y Registro de Modificaciones de Datos Sensibles: El sistema garantizará que toda modificación de información crítica deje evidencia auditable, evitando alteraciones sin registro y fortaleciendo el control interno.| Must | [cite_start]Registro de usuario, fecha y acción[cite: 64, 65, 66, 67]. |
+| **RF-06.03** | Registro de Intentos de Acceso y Eventos de Seguridad: El sistema garantizará el control y la trazabilidad de accesos indebidos o intentos fallidos, reduciendo riesgos de fraude, accesos no autorizados y vulneraciones de información.| Must | [cite_start]Registro de usuario, fecha y acción[cite: 64, 65, 66, 67]. |
 | **RF-07** | Administración de roles y perfiles | Must | [cite_start]Gestión de permisos sin afectar otros usuarios[cite: 68, 69, 70, 71]. |
 | **RF-08** | Almacenamiento seguro de archivos | Must | [cite_start]Directorios protegidos y autorizados[cite: 72, 73, 74, 75]. |
 | **RF-09** | Scoring crediticio y análisis de riesgo | Should | [cite_start]Puntuación automática según criterios[cite: 76, 77, 78, 79]. |
@@ -88,4 +104,5 @@
 
 **Firma:** __________________________  
 [cite_start]**Fecha:** __________________ [cite: 114, 115]
+
 
