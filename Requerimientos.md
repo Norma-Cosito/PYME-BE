@@ -68,11 +68,11 @@
 | **RF-04.03** | Escritura de la Operación (POST/PUT): Una vez que el crédito es aprobado en la nueva plataforma, toda la estructura (plan de pagos, datos de la garantía, condiciones) debe "viajar" al Core para su desembolso. No queremos que nadie tenga que transcribir datos manualmente del software nuevo al Core antiguo. Eso es fuente de errores. | Must | [cite_start]Validación JWT e intercambio JSON exitoso[cite: 57, 58, 59]. |
 | **RF-05** | Reportes automáticos (PDF/Excel) | Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
 | **RF-05.01** | Informe de Propuesta de Crédito (PDF): Este es un documento formal, con el logo del BDP, que resume toda la evaluación. Debe incluir:
-Datos generales del cliente y su unidad productiva.
-Cuadros de estados financieros comparativos.
-El análisis de los ratios que mencionamos antes.
-La conclusión del oficial de crédito.
-Nota importante: Este PDF debe ser "no editable" para garantizar la integridad de la información que llega al comité.| Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
+               |Datos generales del cliente y su unidad productiva.|
+               |Cuadros de estados financieros comparativos.|      
+               |El análisis de los ratios que mencionamos antes.|
+               |La conclusión del oficial de crédito.|
+               |Nota importante: Este PDF debe ser "no editable" para garantizar la integridad de la información que llega al comité.| Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
 | **RF-05.02** | Plan de Pagos Proyectado (PDF/Excel): Un documento que el oficial pueda entregarle al cliente ahí mismo, en su negocio, para que vea cómo quedarían sus cuotas.qa| Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
 | **RF-05.03** | Generación de Reportes de Seguimiento y Mora en formato Excel: El sistema deberá permitir al Gerente generar un archivo en formato Excel que consolide información actualizada sobre el estado de las solicitudes y el desempeño de los oficiales.| Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
 | **RF-06** | Logs de auditoría | Must | [cite_start]Registro de usuario, fecha y acción[cite: 64, 65, 66, 67]. |
@@ -104,5 +104,6 @@ Nota importante: Este PDF debe ser "no editable" para garantizar la integridad d
 
 **Firma:** __________________________  
 [cite_start]**Fecha:** __________________ [cite: 114, 115]
+
 
 
