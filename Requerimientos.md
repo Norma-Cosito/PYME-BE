@@ -1,106 +1,129 @@
-# Guía de Trabajo: Identificación de Requerimientos para un Proyecto Real
+# Plataforma Virtual para la Digitalización del Proceso Crediticio Pyme y Banca Empresa
 
-[cite_start]**Versión del Documento:** 1.0 [cite: 2]  
-[cite_start]**Fecha:** 12/02/2026 [cite: 3]  
-[cite_start]**Autores:** Miguel Angel Chura Condori, Norma Mendoza Layme, Nicole Abigail Arratia Chipana, Roger Huarachi Rojas, Kevin Jhonatan Rocha, Beymar Castillo Cordova[cite: 4, 44].
+## 1. Resumen Ejecutivo
 
----
+### 1.1 Ficha del Proyecto
 
-## 1. Introducción y Objetivo
-[cite_start]El propósito de esta guía es proporcionar un marco estructurado para descubrir, analizar y documentar los requerimientos de un proyecto de software o ingeniería[cite: 5, 6]. [cite_start]Un buen levantamiento reduce riesgos de fracaso, sobrecostos y malentendidos[cite: 7].
-
-### ¿Qué es un Requerimiento?
-[cite_start]Es una condición o capacidad que debe cumplir el sistema para satisfacer un contrato, estándar o especificación formal[cite: 8, 9].
+| **Concepto** | **Descripción** |
+|--------|-------------|
+| **Nombre del Proyecto** | CONSULTORÍA PARA LA PROVISIÓN DE SOFTWARE PARA PYME Y BE |
+| **Problema a Resolver** | El Banco de Desarrollo Productivo (BDP S.A.M.) presenta un proceso crediticio para Pyme y Banca Empresa que requiere mayor agilidad, eficiencia y digitalización. Actualmente, el proceso implica múltiples formularios físicos, evaluaciones manuales y tiempos prolongados de análisis, lo que genera demoras en la aprobación de créditos, mayor carga operativa y una limitada trazabilidad de la información. Además, se necesita integrar herramientas tecnológicas como scoring crediticio, monitoreo de transacciones y conexión con el sistema CORE bancario, garantizando seguridad, confidencialidad y cumplimiento normativo. |
+| **Objetivo Principal** | Desarrollar e implementar una plataforma virtual que digitalice y optimice el proceso crediticio para Pyme y Banca Empresa del BDP S.A.M., permitiendo una gestión más ágil, segura y eficiente, integrada al sistema CORE del banco y alineada a las tendencias tecnológicas actuales. |
 
 ---
 
-## [cite_start]2. Fases de la Identificación [cite: 10]
+### 1.2 Matriz de Stakeholders
 
-### [cite_start]Fase A: Definición del Contexto y Stakeholders [cite: 11]
-* **Stakeholders Clave:** ¿Quién paga? ¿Quién lo usa? [cite_start]¿Quién lo mantiene? [cite: 13]
-* [cite_start]**Problema de Negocio:** ¿Qué necesidad resuelve este software? [cite: 14]
-* [cite_start]**Alcance (Scope):** Lo que incluye y lo que no incluye el proyecto[cite: 15].
-
-### [cite_start]Fase B: Técnicas de Elicitación [cite: 16]
-* [cite_start]**Entrevistas:** Reuniones 1 a 1[cite: 18].
-* [cite_start]**Lluvia de Ideas:** Sesión grupal sin filtros[cite: 19].
-* [cite_start]**Observación:** Ver cómo trabajan los usuarios[cite: 20].
-* [cite_start]**Análisis Documental:** Revisar reportes y sistemas actuales[cite: 21].
-* [cite_start]**Prototipado:** Bocetos rápidos para feedback[cite: 22].
-
-### [cite_start]Fase C: Clasificación de Requerimientos [cite: 23]
-1.  [cite_start]**Negocio:** Objetivos de alto nivel de la organización[cite: 24, 25].
-2.  [cite_start]**Usuario:** Lo que el usuario necesita hacer[cite: 26, 27].
-3.  [cite_start]**Funcionales (RF):** Comportamientos específicos ("El sistema debe...")[cite: 28, 29].
-4.  [cite_start]**No Funcionales (RNF):** Atributos de calidad (URPS: Usabilidad, Confiabilidad, Rendimiento, Soporte)[cite: 32, 33, 34, 35, 36, 37].
+| **Rol** | **Nombre/Cargo** | **Nivel de Influencia** | **Expectativa Principal** |
+|--------|----------------|------------------------|---------------------------|
+| Cliente / Patrocinador | Alta Gerencia del BDP S.A.M. | Alto | Que el proyecto se implemente en el plazo establecido, dentro del presupuesto y que mejore radicalmente la eficiencia del proceso crediticio. |
+| Usuario Final | Analistas de crédito y Funcionarios | Medio | Contar con una plataforma fácil de usar que agilice la evaluación, reduzca la carga operativa manual y evite el uso de hojas de cálculo externas. |
+| Equipo Técnico | Miguel Angel Chura Condori (Gestor de Pilas) <br> Norma Mendoza Layme (Dev) <br> Nicole Abigail Arratia Chipana (Dev) <br> Roger Huarachi Rojas (Dev) <br> Kevin Jhonatan Rocha (Dev) <br> Beymar Castillo Cordova (Dev) | Alto | Contar con requerimientos claros, acceso a los ambientes de prueba a tiempo, y entregar un software de alta calidad que cumpla con el cronograma. |
 
 ---
 
-## [cite_start]3. Hoja de Trabajo Práctica [cite: 39]
+## 2. Antecedentes y Problema (El "Por qué")
 
-### 3.1. [cite_start]Ficha del Proyecto [cite: 41]
-| Concepto | Descripción |
-| :--- | :--- |
-| **Nombre del Proyecto** | [cite_start]CONSULTORÍA PARA LA PROVISIÓN DE SOFTWARE PARA PYME Y BE [cite: 42] |
-| **Problema a Resolver** | [cite_start]Proceso crediticio lento y manual en BDP S.A.M. que requiere agilidad, digitalización y trazabilidad[cite: 42]. |
-| **Objetivo Principal** | [cite_start]Implementar una plataforma virtual integrada al CORE bancario para optimizar el proceso crediticio[cite: 42]. |
+**Contexto:** El BDP S.A.M. es una sociedad de economía mixta que funciona como un banco de primer y segundo piso. El proyecto está enfocado en el área crediticia productiva.  
 
-### 3.2. [cite_start]Matriz de Stakeholders [cite: 43]
-| Rol | Nombre/Cargo | Influencia | Expectativa Principal |
-| :--- | :--- | :--- | :--- |
-| Cliente / Patrocinador | Directorio y Alta Gerencia BDP | Alto | [cite_start]Eficiencia y cumplimiento de plazos[cite: 44]. |
-| Usuario Final | Analistas de crédito y funcionarios | Medio | [cite_start]Plataforma fácil de usar y ágil[cite: 44]. |
-| Equipo Técnico | Miguel Chura condori (Gestor de pila), Norma Mendoza (Devs), Nicole Arratia(Devs), Roger Huarachi(Devs), Kevin Rocha(Devs), Beymar Castillo(Devs) | - | [cite_start]Desarrollo y ejecución técnica[cite: 4, 44]. |
+**Problema actual:** El proceso crediticio requiere mayor agilidad para evitar cuellos de botella operativos en las agencias.
 
-### 3.3. [cite_start]Listado de Requerimientos Funcionales (RF) [cite: 45]
-| ID | Descripción | Prioridad | Criterio de Aceptación |
-| :--- | :--- | :--- | :--- |
-| **RF-01** | Validar credenciales (Login) | Must | [cite_start]Bloqueo tras 3 intentos fallidos[cite: 47]. |
-! **RF-01.01**| 
-| **RF-02** | Gestión de solicitudes de crédito | Must | [cite_start]Crear, editar y consultar sin errores[cite: 48, 49, 50]. |
-| **RF-03** | Evaluaciones financieras automáticas | Must | [cite_start]Cálculos correctos y reportes exportables[cite: 53, 54, 55]. |
-| **RF-03.01** | Carga de Datos y Consolidación: El sistema debe permitir ingresar el balance general y el estado de resultados (o los datos equivalentes para micro-segmentos que no llevan contabilidad formal). Queremos que, al ingresar estos datos, el sistema calcule automáticamente los ratios financieros estándar: liquidez, solvencia, rotación de inventarios, etc. | Must | [cite_start]Cálculos correctos y reportes exportables[cite: 53, 54, 55]. |
-| **RF-03.02** | Capacidad de Pago: Esta es la "joya de la corona". Necesitamos que el software proyecte el flujo de caja del cliente y determine, de manera automática, cuánto puede pagar mensualmente sin asfixiar su negocio. Si el oficial cambia una variable (como el plazo del crédito), el cálculo de la capacidad de pago debería actualizarse al instante.| Must | [cite_start]Cálculos correctos y reportes exportables[cite: 53, 54, 55]. |
-| **RF-03.03** | Análisis Comparativo: Nos gustaría que el sistema compare los indicadores del cliente actual con promedios del mismo sector (por ejemplo, comparar una manufacturera de muebles con el promedio de ese rubro).| Must | [cite_start]Cálculos correctos y reportes exportables[cite: 53, 54, 55]. |
-| **RF-04** | Integración API REST con CORE | Must | [cite_start]Validación JWT e intercambio JSON exitoso[cite: 57, 58, 59]. |
-| **RF-04.01** | Consulta de Datos del Cliente (GET): Cuando un oficial inicia una solicitud, el sistema debe "llamar" al Core mediante la API para verificar si el cliente ya existe. Necesitamos traer de vuelta sus datos básicos, su historial de créditos actuales, sus saldos en cuentas y, muy importante, su calificación de riesgo vigente en el sistema.| Must | [cite_start]Validación JWT e intercambio JSON exitoso[cite: 57, 58, 59]. |
-| **RF-04.02** | Sincronización de Tablas Maestras: El software de la consultoría debe estar alimentado por las tasas de interés, plazos máximos y tipos de garantías que el Core tiene parametrizados. No queremos que un oficial de crédito use una tasa que ya caducó.| Must | [cite_start]Validación JWT e intercambio JSON exitoso[cite: 57, 58, 59]. |
-| **RF-04.03** | Escritura de la Operación (POST/PUT): Una vez que el crédito es aprobado en la nueva plataforma, toda la estructura (plan de pagos, datos de la garantía, condiciones) debe "viajar" al Core para su desembolso. No queremos que nadie tenga que transcribir datos manualmente del software nuevo al Core antiguo. Eso es fuente de errores. | Must | [cite_start]Validación JWT e intercambio JSON exitoso[cite: 57, 58, 59]. |
-| **RF-05** | Reportes automáticos (PDF/Excel) | Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
-| **RF-05.01** | Informe de Propuesta de Crédito (PDF): Este es un documento formal, con el logo del BDP, que resume toda la evaluación. Debe incluir:
-Datos generales del cliente y su unidad productiva.
-Cuadros de estados financieros comparativos.
-El análisis de los ratios que mencionamos antes.
-La conclusión del oficial de crédito.
-Nota importante: Este PDF debe ser "no editable" para garantizar la integridad de la información que llega al comité.| Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
-| **RF-05.02** | Plan de Pagos Proyectado (PDF/Excel): Un documento que el oficial pueda entregarle al cliente ahí mismo, en su negocio, para que vea cómo quedarían sus cuotas.qa| Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
-| **RF-05.03** | Generación de Reportes de Seguimiento y Mora en formato Excel: El sistema deberá permitir al Gerente generar un archivo en formato Excel que consolide información actualizada sobre el estado de las solicitudes y el desempeño de los oficiales.| Must | [cite_start]Generación sin pérdida de información[cite: 60, 61, 62, 63]. |
-| **RF-06** | Logs de auditoría | Must | [cite_start]Registro de usuario, fecha y acción[cite: 64, 65, 66, 67]. |
-| **RF-06.01** | | Trazabilidad de Decisiones de Crédito: El sistema permitirá verificar de manera transparente y auditable todo el proceso de aprobación de un crédito (por ejemplo, uno de 100.000 bolivianos), asegurando control interno y cumplimiento normativo.| [cite_start]Registro de usuario, fecha y acción[cite: 64, 65, 66, 67]. |
-| **RF-06.02** | Control y Registro de Modificaciones de Datos Sensibles: El sistema garantizará que toda modificación de información crítica deje evidencia auditable, evitando alteraciones sin registro y fortaleciendo el control interno.| Must | [cite_start]Registro de usuario, fecha y acción[cite: 64, 65, 66, 67]. |
-| **RF-06.03** | Registro de Intentos de Acceso y Eventos de Seguridad: El sistema garantizará el control y la trazabilidad de accesos indebidos o intentos fallidos, reduciendo riesgos de fraude, accesos no autorizados y vulneraciones de información.| Must | [cite_start]Registro de usuario, fecha y acción[cite: 64, 65, 66, 67]. |
-| **RF-07** | Administración de roles y perfiles | Must | [cite_start]Gestión de permisos sin afectar otros usuarios[cite: 68, 69, 70, 71]. |
-| **RF-08** | Almacenamiento seguro de archivos | Must | [cite_start]Directorios protegidos y autorizados[cite: 72, 73, 74, 75]. |
-| **RF-09** | Scoring crediticio y análisis de riesgo | Should | [cite_start]Puntuación automática según criterios[cite: 76, 77, 78, 79]. |
-| **RF-10** | Seguimiento de trámites en tiempo real | Should | [cite_start]Visualización del estado del trámite[cite: 80, 81, 82, 83]. |
-| **RF-15** | Aplicación móvil independiente | Won't | [cite_start]Fuera del alcance en esta fase[cite: 100, 101, 102, 103]. |
+### 2.1 La Complejidad del Sector Productivo
 
-### 3.4. [cite_start]Listado de Requerimientos No Funcionales (RNF) [cite: 104]
-| ID | Categoría | Descripción Técnica | Métrica de Éxito |
-| :--- | :--- | :--- | :--- |
-| **RNF-01** | Seguridad | Hashing de contraseñas | [cite_start]Uso de bcrypt/Argon2[cite: 105]. |
-| **RNF-02** | Rendimiento | Tiempo de respuesta | [cite_start]Menos de 1 seg con 10k registros[cite: 105]. |
-| **RNF-03** | Compatibilidad | Web Responsive | [cite_start]Móvil y Escritorio[cite: 105]. |
-| **RNF-04** | Disponibilidad | Alta disponibilidad | [cite_start]99% de uptime mensual[cite: 105]. |
-| **RNF-05** | Escalabilidad | Escalamiento horizontal | [cite_start]500+ usuarios concurrentes[cite: 105]. |
+- **El Ciclo de Vida (Pecuario):** El software debe proyectar el desarrollo del hato ganadero (nacimientos, recría, engorde, venta) para automatizar el cálculo de ingresos.  
+- **La Estacionalidad (Agrícola):** El sistema debe permitir simulación mediante supuestos (precio de soya, rendimiento por hectárea).  
+- **Gestión de Garantías:** Conexión dinámica entre valor de garantías y capacidad de pago.
+
+### 2.2 Riesgos de un Software Genérico
+
+- Riesgos de crédito  
+- Cuellos de botella operativos  
+
+**Triple Impacto:**
+- El productor recibe el crédito a tiempo  
+- El banco asegura su cartera  
+- El país produce más alimentos  
 
 ---
 
-## [cite_start]4. Validación y Cierre [cite: 108, 109]
-* [cite_start][x] ¿Son los requerimientos claros y sin ambigüedades? [cite: 110]
-* [cite_start][x] ¿Son los requerimientos medibles? [cite: 111]
-* [cite_start][ ] ¿Todos los stakeholders han aprobado esta lista? [cite: 112]
-* [cite_start][ ] ¿Se han identificado riesgos técnicos complejos? [cite: 113]
+## 3. Alcance del Proyecto (El "Qué")
 
-**Firma:** __________________________  
-[cite_start]**Fecha:** __________________ [cite: 114, 115]
+**Funcionalidades principales:**
+
+- Registro inicial único de datos  
+- Checklists inteligentes  
+- Calculadoras automatizadas  
+- Generación de reportes ejecutivos  
+- Selector dinámico de perfil  
+
+**Restricción de Alcance:**  
+No se desarrollará aplicación móvil nativa independiente.
+
+---
+
+## 4. Requerimientos Funcionales y Técnicos
+
+### 4.1 Requerimientos Funcionales
+
+| **ID** | **Descripción** | **Prioridad** |
+|------|-------------|------------|
+| RF-01 | Login seguro y roles | Must |
+| RF-02 | Gestión de formularios | Must |
+| RF-03 | Evaluación financiera | Must |
+| RF-04 | Evaluación sectorial | Should |
+| RF-05 | Generación automática de evaluaciones | Must |
+| RF-06 | Integración API CORE | Must |
+| RF-07 | Reportes PDF y Excel | Must |
+| RF-08 | Logs de auditoría | Must |
+| RF-09 | Gestión de permisos RBAC | Must |
+| RF-10 | Almacenamiento seguro | Must |
+| RF-11 | Scoring automático | Should |
+| RF-12 | Monitoreo en tiempo real | Should |
+
+---
+
+### 4.2 Requerimientos No Funcionales
+
+| **ID** | **Categoría** | **Descripción** |
+|------|-------------|-------------|
+| RNF-01 | Offline-First | Funcionamiento sin internet |
+| RNF-02 | Escalabilidad | Soporte 500 usuarios |
+| RNF-03 | Parametrización | Motor de reglas dinámico |
+| RNF-04 | Integración | API segura |
+| RNF-05 | Seguridad | Cifrado + WORM |
+
+---
+
+## 5. Estrategia de Implementación
+
+- Metodologías ágiles  
+- Capacitación en Sandbox  
+- Control de cambios por ambientes  
+
+---
+
+## 6. Propiedad y Confidencialidad
+
+- Código fuente propiedad del BDP  
+- Información confidencial  
+
+---
+
+## 7. Cronograma
+
+- Fase 1: 40 días  
+- Fase 2: 140 días  
+- Fase 3: 240 días  
+- Fase 4: 260 días  
+
+---
+
+## 8. Presupuesto
+
+| **Hito** | **Monto (Bs.)** | **%** |
+|--------|---------------|------|
+| Firma contrato | 100.000 | 20% |
+| Entrega 2 | 175.000 | 35% |
+| Entrega 4 | 125.000 | 25% |
+| Entrega 5 | 100.000 | 20% |
+| **TOTAL** | **500.000** | **100%** |
