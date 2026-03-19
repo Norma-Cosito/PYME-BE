@@ -1,54 +1,55 @@
-# Plataforma Virtual para la Digitalización del Proceso Crediticio - BDP S.A.M.
+# Plataforma Virtual de Crédito Pyme y Empresa - BDP S.A.M.
 
-## 1. Descripción del Proyecto
-[cite_start]Este proyecto consiste en la **Consultoría para la Provisión de Software para PYME y BE**[cite: 4]. [cite_start]El objetivo principal es desarrollar una plataforma virtual que digitalice y optimice el proceso crediticio del Banco de Desarrollo Productivo (BDP S.A.M.), integrándolo al sistema CORE bancario[cite: 4].
+## 1. Visión General
+Este repositorio contiene la documentación y activos de la **Consultoría para la Provisión de Software para PYME y BE**. El proyecto digitaliza el ciclo de vida del crédito productivo, integrando herramientas avanzadas de scoring y conexión directa con el CORE bancario del Banco de Desarrollo Productivo.
 
-### Problema a Resolver
-* [cite_start]Agilización de procesos manuales y eliminación de múltiples formularios físicos[cite: 4].
-* [cite_start]Reducción de tiempos prolongados de análisis y carga operativa[cite: 4].
-* [cite_start]Integración de scoring crediticio y monitoreo de transacciones bajo normas de seguridad[cite: 4].
+### Objetivos Estratégicos
+* **Agilidad Operativa:** Eliminar cuellos de botella mediante la automatización de formularios y flujos de aprobación.
+* **Especialización Productiva:** Implementar calculadoras biológicas y sectoriales (agrícola/pecuaria).
+* **Seguridad Bancaria:** Garantizar la trazabilidad total mediante auditoría inalterable y cifrado de grado financiero.
 
 ---
 
-## 2. Matriz de Stakeholders (Interesados)
-| Rol | Nombre/Cargo | Influencia | Expectativa Principal |
+## 2. Matriz de Interesados (Stakeholders)
+
+| Rol | Identidad / Cargo | Influencia | Expectativa Clave |
 | :--- | :--- | :--- | :--- |
-| **Cliente / Patrocinador** | Alta Gerencia del BDP S.A.M. | Alto | [cite_start]Implementación en plazo, presupuesto y mejora de eficiencia[cite: 6]. |
-| **Usuario Final** | Analistas de crédito y Funcionarios | Medio | [cite_start]Plataforma intuitiva que elimine hojas de cálculo externas[cite: 6]. |
-| **Equipo Técnico** | Miguel Angel Chura (Gestor) y Equipo Dev | Alto | [cite_start]Requerimientos claros y entrega de software de alta calidad[cite: 6]. |
+| **Patrocinador** | Alta Gerencia BDP S.A.M. | Alta | Retorno de inversión y eficiencia en plazos. |
+| **Usuario Final** | Analistas de Crédito | Media | Reducción de carga manual y facilidad de uso. |
+| **Equipo Técnico** | Gestor de Pilas & Devs | Alta | Requerimientos técnicos claros y calidad de código. |
 
-[cite_start]**Equipo de Desarrollo:** Norma Mendoza, Nicole Arratia, Roger Huarachi, Kevin Rocha, Beymar Castillo[cite: 6].
-
----
-
-## 3. Especificaciones Técnicas
-
-### Requerimientos Funcionales Clave (Top 5)
-1. [cite_start]**RF-01:** Validación de credenciales y roles (Login seguro)[cite: 34].
-2. [cite_start]**RF-03/05:** Evaluación financiera y generación automática de flujos/balances[cite: 34].
-3. [cite_start]**RF-04:** Evaluación productiva sectorial (Agrícola/Pecuario)[cite: 34].
-4. [cite_start]**RF-06:** Integración vía API REST con el CORE bancario (JSON, JWT)[cite: 34].
-5. [cite_start]**RF-08:** Registro de logs de auditoría inalterables[cite: 34].
-
-### Atributos de Calidad (No Funcionales)
-* [cite_start]**Offline-First:** Operación continua en campo sin conexión mediante PWA/IndexedDB[cite: 36].
-* [cite_start]**Escalabilidad:** Arquitectura modular en PostgreSQL para soportar +500 usuarios concurrentes[cite: 36].
-* [cite_start]**Seguridad:** Cifrado bcrypt/Argon2 y protección WORM para logs[cite: 36].
+**Cuerpo Técnico:** Miguel Angel Chura (Gestor), Norma Mendoza, Nicole Arratia, Roger Huarachi, Kevin Rocha, Beymar Castillo.
 
 ---
 
-## 4. Plan de Implementación y Cronograma
-[cite_start]El proyecto tiene una duración total de **260 días hábiles** [cite: 48] y un presupuesto de **Bs. [cite_start]500.000,00**[cite: 51].
+## 3. Arquitectura y Requerimientos
 
-| Fase | Hito | Plazo |
+### Pilares Técnicos (Stack & RNF)
+* **Arquitectura:** Modular con base de datos PostgreSQL.
+* **Integración:** Comunicación segura vía API-REST (JWT, JSON, HATEOAS).
+* **Disponibilidad:** Estrategia **Offline-First** para trabajo de campo sin conexión.
+* **Auditoría:** Logs con protección WORM (inalterables).
+
+### Funcionalidades Principales
+1. **Validación de Roles:** Control de acceso basado en RBAC.
+2. **Evaluación Productiva:** Simulación de escenarios de mercado y precios.
+3. **Gestión de Garantías:** Conexión dinámica entre prendas pecuarias y capacidad de pago.
+4. **Reportes Automáticos:** Generación de resúmenes de comité en PDF y Excel.
+
+---
+
+## 4. Cronograma de Ejecución (260 Días)
+
+| Fase | Hito de Control | Entregable Principal |
 | :--- | :--- | :--- |
-| **Fase 1** | [cite_start]Análisis, diseño y maquetado de formularios[cite: 45]. | [cite_start]Hasta 40 días[cite: 45]. |
-| **Fase 2** | [cite_start]Desarrollo de módulos principales e integración API[cite: 46]. | [cite_start]Hasta 140 días[cite: 46]. |
-| **Fase 3** | [cite_start]Pruebas en ambiente SandBox y capacitación[cite: 47]. | [cite_start]Hasta 240 días[cite: 47]. |
-| **Fase 4** | [cite_start]Paso a producción e informe final[cite: 48]. | [cite_start]Hasta 260 días[cite: 48]. |
+| **01** | Análisis y Diseño | Maquetado de UX/UI y flujos de procesos. |
+| **02** | Desarrollo e Integración | Módulos de crédito y conexión al CORE. |
+| **03** | SandBox y Pruebas | Validación operativa y capacitación "Aprender Haciendo". |
+| **04** | Paso a Producción | Transferencia tecnológica y cierre de proyecto. |
 
 ---
 
-## 5. Propiedad y Confidencialidad
-* **Propiedad Intelectual:** Todo el código fuente es propiedad absoluta del BDP S.A.M.[cite: 42].
-* [cite_start]**Confidencialidad:** Información protegida bajo acuerdos de no divulgación (NDA)[cite: 43].
+## 5. Aspectos Legales
+* **Presupuesto:** Bs. 500.000,00 bajo modalidad de productos entregables.
+* **Propiedad Intelectual:** El código fuente y la documentación son propiedad exclusiva del **BDP S.A.M.**.
+* **Confidencialidad:** Sujeto a acuerdos de no divulgación (NDA).
