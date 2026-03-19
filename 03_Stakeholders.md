@@ -22,7 +22,7 @@ A continuación, se detallan los actores clave que participan en el proyecto y s
 | :--- | :--- | :--- | :--- |
 | **Cliente / Patrocinador** | Alta Gerencia del BDP S.A.M. | **Alto** | Implementación en plazo, presupuesto y mejora de eficiencia. |
 | **Usuario Final** | Analistas de crédito y Funcionarios | **Medio** | Plataforma fácil de usar que elimine procesos manuales. |
-| **Equipo Técnico** | Miguel A. Chura (Gestor) + Equipo Dev | **Alto** | Requerimientos claros y entrega de software de alta calidad. |
+| **Equipo Técnico** | Norma Mendoza (Gestor) + Equipo Dev | **Alto** | Requerimientos claros y entrega de software de alta calidad. |
 
 ---
 
@@ -42,16 +42,16 @@ El cronograma se divide en cuatro grandes fases de trabajo para asegurar una imp
 ## 4. Requerimientos Destacados
 
 ### Funcionales (RF)
-* **Integración:** Comunicación vía API REST con el CORE bancario. [cite: 34]
-* [cite_start]**Automatización:** Generación automática de flujos, balances e índices financieros. [cite: 34]
-* [cite_start]**Sectorial:** Evaluación especializada para sectores agrícolas y pecuarios. [cite: 34]
+* **Integración:** Comunicación vía API REST con el CORE bancario.
+* **Automatización:** Generación automática de flujos, balances e índices financieros.
+* **Sectorial:** Evaluación especializada para sectores agrícolas y pecuarios.
 
 ### No Funcionales (RNF)
-* **Offline-First:** Operación continua en campo sin conexión a internet. [cite: 36]
-* [cite_start]**Seguridad:** Registro de logs de auditoría inalterables (protección WORM). [cite: 36]
-* [cite_start]**Escalabilidad:** Soporte para un mínimo de 500 usuarios concurrentes. [cite: 36]
+* **Offline-First:** Operación continua en campo sin conexión a internet.
+* **Seguridad:** Registro de logs de auditoría inalterables (protección WORM).
+* **Escalabilidad:** Soporte para un mínimo de 500 usuarios concurrentes.
 
 ---
 
 ## 5. Confidencialidad y Propiedad
-[cite_start]Toda la información técnica y de negocio contenida en este repositorio es estrictamente confidencial. [cite: 43] [cite_start]El código fuente desarrollado es propiedad exclusiva del **BDP S.A.M.** [cite: 42]
+Toda la información técnica y de negocio contenida en este repositorio es estrictamente confidencial. El código fuente desarrollado es propiedad exclusiva del **BDP S.A.M.**
