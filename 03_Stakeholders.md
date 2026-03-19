@@ -45,7 +45,5 @@ El cronograma se divide en cuatro grandes fases de trabajo para asegurar una imp
 * **Seguridad:** Registro de logs de auditoría inalterables (protección WORM).
 * **Escalabilidad:** Soporte para un mínimo de 500 usuarios concurrentes.
 
----
-
 ## 5. Confidencialidad y Propiedad
 Toda la información técnica y de negocio contenida en este repositorio es estrictamente confidencial. El código fuente desarrollado es propiedad exclusiva del **BDP S.A.M.**
