@@ -1,4 +1,4 @@
-# 📑 ÍNDICE DEL PROYECTO
+# ÍNDICE DEL PROYECTO
 
 ## 1. Resumen Ejecutivo
 - [1.1. Ficha del Proyecto](01_Resumen_Ejecutivo.md)
