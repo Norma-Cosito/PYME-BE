@@ -1,49 +1,33 @@
-# Plataforma Virtual para la Digitalización del Proceso Crediticio - BDP S.A.M.
+# 3. Stakeholders (Partes Interesadas del Proyecto)
 
-## 1. Cuadro Resumen del Proyecto (Matriz de Control)
+## 3.1. Introducción
+Los stakeholders representan a todos los actores que influyen o son impactados por el desarrollo e implementación del sistema PYME-BE. Su correcta identificación permite garantizar que el sistema cumpla con las necesidades operativas, estratégicas y tecnológicas del Banco de Desarrollo Productivo (BDP).
 
-Este cuadro consolida los aspectos más importantes de la planificación, los responsables y los objetivos estratégicos del software.
+---
 
-| Categoría | Detalle Clave | Observaciones / Metas |
-| :--- | :--- | :--- |
-| **Nombre del Proyecto** | Consultoría para la Provisión de Software para PYME y BE | Digitalización integral del proceso crediticio. |
-| **Presupuesto Total** | **Bs. 500.000,00** | Pago dividido en 4 hitos (20%, 35%, 25%, 20%). |
-| **Plazo Total** | **260 días hábiles**  | Desde el análisis hasta el "Go-live" en producción. |
-| **Tecnología Clave** | API REST, PostgreSQL, PWA | Integración al CORE bancario y funcionamiento offline. |
-| **Propiedad** | BDP S.A.M. | El código fuente es propiedad absoluta del banco. |
+## 3.2. Matriz de Stakeholders
 
-## 2. Matriz de Stakeholders (Interesados)
+| Rol | Nombre / Cargo | Nivel de Influencia | Expectativa Principal |
+|-----|----------------|--------------------|----------------------|
+| Cliente / Patrocinador | Alta Gerencia del BDP S.A.M. | Alto | Que el sistema se implemente dentro del plazo y presupuesto establecidos, mejorando significativamente la eficiencia del proceso crediticio. |
+| Usuario Final | Analistas de crédito y funcionarios del BDP | Medio | Contar con una plataforma intuitiva que agilice la evaluación crediticia, reduzca el trabajo manual y elimine el uso de herramientas externas como hojas de cálculo. |
+| Equipo Técnico | Equipo de desarrollo del proyecto (Backend, Frontend, QA) | Alto | Disponer de requerimientos claros, acceso a entornos de prueba y entregar un sistema robusto, seguro y escalable. |
+| Área de TI | Departamento de Tecnología del BDP | Alto | Garantizar la integración con sistemas existentes (CORE bancario), seguridad de la información y mantenimiento del sistema. |
+| Entidad Reguladora | ASFI (Autoridad de Supervisión del Sistema Financiero) | Alto | Cumplimiento de normativas financieras, trazabilidad de operaciones y transparencia en los procesos crediticios. |
+| Beneficiarios Indirectos | Clientes PyME del BDP | Bajo | Acceder a procesos crediticios más rápidos, eficientes y confiables. |
 
-A continuación, se detallan los actores clave que participan en el proyecto y sus expectativas principales.
+---
 
-| Rol | Nombre / Cargo | Influencia | Expectativa Principal |
-| :--- | :--- | :--- | :--- |
-| **Cliente / Patrocinador** | Alta Gerencia del BDP S.A.M. | **Alto** | Implementación en plazo, presupuesto y mejora de eficiencia. |
-| **Usuario Final** | Analistas de crédito y Funcionarios | **Medio** | Plataforma fácil de usar que elimine procesos manuales. |
-| **Equipo Técnico** | Norma Mendoza (Gestor) + Equipo Dev | **Alto** | Requerimientos claros y entrega de software de alta calidad. |
+## 3.3. Análisis de Stakeholders
 
-## 3. Resumen de Ejecución (Hitos y Entregables)
+- **Alta Gerencia (Alta influencia / Alta importancia):** Define la viabilidad del proyecto y toma decisiones estratégicas.
+- **Usuarios Finales (Media influencia / Alta importancia):** Impactan directamente en la adopción del sistema.
+- **Equipo Técnico (Alta influencia / Alta importancia):** Responsable de la implementación y calidad del sistema.
+- **Área de TI (Alta influencia / Media importancia):** Asegura la integración tecnológica y continuidad operativa.
+- **Entidad Reguladora (Alta influencia / Alta importancia):** Garantiza el cumplimiento normativo.
+- **Clientes PyME (Baja influencia / Alta importancia):** Beneficiarios finales del sistema.
 
-El cronograma se divide en cuatro grandes fases de trabajo para asegurar una implementación controlada.
+---
 
-| Fase | Descripción de Actividades | Plazo (Días Hábiles) |
-| :--- | :--- | :--- |
-| **Fase 1: Análisis** | Maquetado de formularios y definición de transiciones. | Hasta 40 días. |
-| **Fase 2: Desarrollo** | Construcción de módulos y conexión API al CORE. | Hasta 140 días. |
-| **Fase 3: Pruebas** | Uso de **SandBox**, validación de calculadoras y capacitación. | Hasta 240 días. |
-| **Fase 4: Producción** | Paso a producción (Go-live) y transferencia tecnológica. | Hasta 260 días. |
-
-## 4. Requerimientos Destacados
-
-### Funcionales (RF)
-* **Integración:** Comunicación vía API REST con el CORE bancario.
-* **Automatización:** Generación automática de flujos, balances e índices financieros.
-* **Sectorial:** Evaluación especializada para sectores agrícolas y pecuarios.
-
-### No Funcionales (RNF)
-* **Offline-First:** Operación continua en campo sin conexión a internet.
-* **Seguridad:** Registro de logs de auditoría inalterables (protección WORM).
-* **Escalabilidad:** Soporte para un mínimo de 500 usuarios concurrentes.
-
-## 5. Confidencialidad y Propiedad
-Toda la información técnica y de negocio contenida en este repositorio es estrictamente confidencial. El código fuente desarrollado es propiedad exclusiva del **BDP S.A.M.**
+## 3.4. Conclusión
+La correcta gestión de los stakeholders permite alinear los objetivos del sistema PYME-BE con las necesidades institucionales del BDP, asegurando su aceptación, sostenibilidad y éxito en el entorno financiero.
