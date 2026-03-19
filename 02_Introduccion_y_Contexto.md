@@ -9,7 +9,7 @@ El presente proyecto se enmarca en el área crediticia productiva, específicame
 A diferencia de los bancos tradicionales, el BDP S.A.M. atiende a clientes cuyos ingresos no son fijos, sino que dependen de actividades productivas como la ganadería y la agricultura, las cuales están sujetas a ciclos biológicos, condiciones climáticas y variaciones del mercado.
 
 
-## 2.2. Situación Actual
+## 2.2. Situación Actual 
 
 Actualmente, el proceso crediticio presenta diversas limitaciones que afectan su eficiencia operativa. Entre ellas se destacan:
 
@@ -22,7 +22,7 @@ Actualmente, el proceso crediticio presenta diversas limitaciones que afectan su
 Estas condiciones generan cuellos de botella en las agencias y dificultan la toma de decisiones oportunas.
 
 
-## 2.3. Necesidad de Digitalización
+## 2.3. Necesidad de Digitalización 🖥 
 
 Frente a esta situación, surge la necesidad de implementar una solución tecnológica que permita digitalizar y optimizar el proceso crediticio, incorporando herramientas que automaticen cálculos, integren información y faciliten el análisis de datos.
 
