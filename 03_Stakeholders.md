@@ -1,4 +1,4 @@
-# 1.2. Matriz de Stakeholders (Interesados del Proyecto)
+# 3. Matriz de Stakeholders (Interesados del Proyecto)
 
 | Rol                   | Nombre/Cargo                                                                 | Nivel de Influencia | Expectativa Principal                                                                 |
 |------------------------|------------------------------------------------------------------------------|---------------------|--------------------------------------------------------------------------------------|
