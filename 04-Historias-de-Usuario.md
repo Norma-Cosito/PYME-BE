@@ -1,7 +1,5 @@
 # Historias de Usuario
 
----
-
 ## 1. Autenticación y Seguridad
 
 ### HU-01: Inicio de sesión seguro
@@ -14,8 +12,6 @@
 - Bloquear acceso tras 3 intentos fallidos  
 - Redirigir al dashboard según rol  
 
----
-
 ### HU-02: Gestión de roles y permisos (RBAC)
 **Como** administrador  
 **Quiero** asignar roles y permisos a los usuarios  
@@ -25,8 +21,6 @@
 - Crear, editar y eliminar roles  
 - Asignar permisos sin afectar otros usuarios  
 - Aplicar restricciones por módulo  
-
----
 
 ## 2. Gestión del Proceso Crediticio
 
@@ -40,8 +34,6 @@
 - Validación de campos obligatorios  
 - Persistencia de información  
 
----
-
 ### HU-04: Gestión de formularios crediticios
 **Como** analista de crédito  
 **Quiero** crear y consultar formularios del proceso crediticio  
@@ -52,8 +44,6 @@
 - Editar y consultar información  
 - Guardado automático  
 
----
-
 ### HU-05: Checklists inteligentes
 **Como** analista de crédito  
 **Quiero** contar con checklists automáticos  
@@ -63,8 +53,6 @@
 - Bloquear avance si falta documentación  
 - Mostrar alertas de documentos faltantes  
 - Validar requisitos obligatorios  
-
----
 
 ## 3. Evaluación Financiera y Productiva
 
@@ -78,8 +66,6 @@
 - Resultados precisos  
 - Exportación de datos  
 
----
-
 ### HU-07: Evaluación productiva sectorial
 **Como** analista  
 **Quiero** evaluar proyectos agrícolas o pecuarios  
@@ -90,8 +76,6 @@
 - Análisis sectorial correcto  
 - Generación de reportes  
 
----
-
 ### HU-08: Scoring crediticio automático
 **Como** sistema  
 **Quiero** calcular automáticamente el puntaje de riesgo  
@@ -101,8 +85,6 @@
 - Evaluación basada en variables sectoriales  
 - Generación automática de puntaje  
 - Clasificación del riesgo  
-
----
 
 ## 4. Reportes y Documentación
 
@@ -116,8 +98,6 @@
 - Descarga en múltiples formatos  
 - Información estructurada  
 
----
-
 ### HU-10: Resumen ejecutivo automático
 **Como** analista  
 **Quiero** obtener un resumen ejecutivo del crédito  
@@ -127,8 +107,6 @@
 - Resumen claro y automático  
 - Datos consolidados  
 - Formato listo para comité  
-
----
 
 ## 5. Integración y Monitoreo
 
@@ -142,8 +120,6 @@
 - Autenticación con JWT  
 - Respuestas correctas del CORE  
 
----
-
 ### HU-12: Monitoreo de transacciones
 **Como** usuario  
 **Quiero** visualizar el estado del proceso crediticio  
@@ -153,8 +129,6 @@
 - Visualización de estados  
 - Tiempos de proceso  
 - Actualización en tiempo real  
-
----
 
 ## 6. Auditoría y Archivos
 
@@ -167,8 +141,6 @@
 - Registro de inserciones, cambios y eliminaciones  
 - Logs inalterables  
 - Consulta de historial  
-
----
 
 ### HU-14: Gestión de documentos digitales
 **Como** usuario  
