@@ -8,9 +8,9 @@ Este cuadro consolida los aspectos más importantes de la planificación, los re
 | :--- | :--- | :--- |
 | **Nombre del Proyecto** | Consultoría para la Provisión de Software para PYME y BE | Digitalización integral del proceso crediticio. |
 | **Presupuesto Total** | **Bs. 500.000,00** | Pago dividido en 4 hitos (20%, 35%, 25%, 20%). |
-| **Plazo Total** | [cite_start]**260 días hábiles** [cite: 48] | [cite_start]Desde el análisis hasta el "Go-live" en producción. [cite: 48] |
-| **Tecnología Clave** | [cite_start]API REST, PostgreSQL, PWA [cite: 36, 38] | [cite_start]Integración al CORE bancario y funcionamiento offline. [cite: 36] |
-| **Propiedad** | [cite_start]BDP S.A.M. [cite: 42] | [cite_start]El código fuente es propiedad absoluta del banco. [cite: 42] |
+| **Plazo Total** | **260 días hábiles**  | Desde el análisis hasta el "Go-live" en producción. |
+| **Tecnología Clave** | API REST, PostgreSQL, PWA | Integración al CORE bancario y funcionamiento offline. |
+| **Propiedad** | BDP S.A.M. | El código fuente es propiedad absoluta del banco. |
 
 ---
 
