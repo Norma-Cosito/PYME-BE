@@ -1,153 +1,24 @@
-# Historias de Usuario
+# 8. Historias de Usuario
 
-## 1. Autenticación y Seguridad
+## 8.1. Product Backlog (Historias de Usuario)
 
-### HU-01: Inicio de sesión seguro
-**Como** usuario del sistema (analista o funcionario)  
-**Quiero** iniciar sesión con credenciales seguras  
-**Para** acceder únicamente a las funcionalidades autorizadas según mi rol  
+| ID | Rol | Historia de Usuario | Prioridad |
+|----|-----|--------------------|----------|
+| HU-01 | Analista de crédito | Como analista de crédito quiero registrar solicitudes de crédito para iniciar el proceso de evaluación de manera digital | Alta |
+| HU-02 | Analista de crédito | Como analista de crédito quiero ingresar estados financieros del cliente para analizar su capacidad de pago | Alta |
+| HU-03 | Analista de crédito | Como analista de crédito quiero generar evaluaciones financieras automáticamente para reducir errores y mejorar la toma de decisiones | Alta |
+| HU-04 | Analista de crédito | Como analista de crédito quiero obtener el scoring crediticio desde una API Fintech para acelerar el proceso de evaluación del cliente | Alta |
+| HU-05 | Analista de crédito | Como analista de crédito quiero visualizar el resultado del scoring en el sistema para tomar decisiones más informadas | Alta |
+| HU-06 | Analista de crédito | Como analista de crédito quiero generar reportes en PDF y Excel para documentar las evaluaciones crediticias | Alta |
+| HU-07 | Jefatura PyME | Como jefe de la unidad PyME quiero visualizar el estado de los créditos en un dashboard para monitorear el avance del proceso crediticio | Media |
+| HU-08 | Administrador del sistema | Como administrador quiero gestionar usuarios y roles para controlar el acceso a la plataforma | Alta |
+| HU-09 | Administrador del sistema | Como administrador quiero registrar logs de auditoría para garantizar la trazabilidad de las operaciones | Alta |
+| HU-10 | Gerencia de Sistemas | Como gerencia de sistemas quiero integrar el sistema con el CORE bancario para asegurar la interoperabilidad con otros sistemas | Alta |
+| HU-11 | Analista de crédito | Como analista de crédito quiero adjuntar documentos digitales del cliente para respaldar la evaluación crediticia | Media |
+| HU-12 | Analista de crédito | Como analista de crédito quiero hacer seguimiento en tiempo real del estado del crédito para conocer el progreso del proceso crediticio | Media |
 
-**Criterios de aceptación:**
-- Validar usuario y contraseña correctamente  
-- Bloquear acceso tras 3 intentos fallidos  
-- Redirigir al dashboard según rol  
+## 8.2. Consideraciones
 
-### HU-02: Gestión de roles y permisos (RBAC)
-**Como** administrador  
-**Quiero** asignar roles y permisos a los usuarios  
-**Para** controlar el acceso a las funcionalidades del sistema  
-
-**Criterios de aceptación:**
-- Crear, editar y eliminar roles  
-- Asignar permisos sin afectar otros usuarios  
-- Aplicar restricciones por módulo  
-
-## 2. Gestión del Proceso Crediticio
-
-### HU-03: Registro único de datos
-**Como** analista de crédito  
-**Quiero** registrar los datos del cliente una sola vez  
-**Para** evitar duplicidad de información en múltiples formularios  
-
-**Criterios de aceptación:**
-- Datos reutilizables en diferentes módulos  
-- Validación de campos obligatorios  
-- Persistencia de información  
-
-### HU-04: Gestión de formularios crediticios
-**Como** analista de crédito  
-**Quiero** crear y consultar formularios del proceso crediticio  
-**Para** gestionar la información de manera digital  
-
-**Criterios de aceptación:**
-- Crear formularios sin errores  
-- Editar y consultar información  
-- Guardado automático  
-
-### HU-05: Checklists inteligentes
-**Como** analista de crédito  
-**Quiero** contar con checklists automáticos  
-**Para** asegurar que toda la documentación requerida esté completa  
-
-**Criterios de aceptación:**
-- Bloquear avance si falta documentación  
-- Mostrar alertas de documentos faltantes  
-- Validar requisitos obligatorios  
-
-## 3. Evaluación Financiera y Productiva
-
-### HU-06: Evaluación financiera automatizada
-**Como** analista de crédito  
-**Quiero** generar automáticamente estados financieros  
-**Para** agilizar el análisis del cliente  
-
-**Criterios de aceptación:**
-- Cálculo de balances, flujos e índices  
-- Resultados precisos  
-- Exportación de datos  
-
-### HU-07: Evaluación productiva sectorial
-**Como** analista  
-**Quiero** evaluar proyectos agrícolas o pecuarios  
-**Para** analizar la capacidad productiva del cliente  
-
-**Criterios de aceptación:**
-- Simulación de escenarios  
-- Análisis sectorial correcto  
-- Generación de reportes  
-
-### HU-08: Scoring crediticio automático
-**Como** sistema  
-**Quiero** calcular automáticamente el puntaje de riesgo  
-**Para** apoyar la toma de decisiones crediticias  
-
-**Criterios de aceptación:**
-- Evaluación basada en variables sectoriales  
-- Generación automática de puntaje  
-- Clasificación del riesgo  
-
-## 4. Reportes y Documentación
-
-### HU-09: Generación de reportes automáticos
-**Como** analista  
-**Quiero** generar reportes en PDF y Excel  
-**Para** presentar resultados al comité de crédito  
-
-**Criterios de aceptación:**
-- Generación sin pérdida de datos  
-- Descarga en múltiples formatos  
-- Información estructurada  
-
-### HU-10: Resumen ejecutivo automático
-**Como** analista  
-**Quiero** obtener un resumen ejecutivo del crédito  
-**Para** facilitar la toma de decisiones  
-
-**Criterios de aceptación:**
-- Resumen claro y automático  
-- Datos consolidados  
-- Formato listo para comité  
-
-## 5. Integración y Monitoreo
-
-### HU-11: Integración con el CORE bancario
-**Como** sistema  
-**Quiero** conectarme al CORE mediante API REST  
-**Para** intercambiar información financiera  
-
-**Criterios de aceptación:**
-- Comunicación vía JSON  
-- Autenticación con JWT  
-- Respuestas correctas del CORE  
-
-### HU-12: Monitoreo de transacciones
-**Como** usuario  
-**Quiero** visualizar el estado del proceso crediticio  
-**Para** hacer seguimiento en tiempo real  
-
-**Criterios de aceptación:**
-- Visualización de estados  
-- Tiempos de proceso  
-- Actualización en tiempo real  
-
-## 6. Auditoría y Archivos
-
-### HU-13: Registro de auditoría
-**Como** sistema  
-**Quiero** registrar todas las acciones realizadas  
-**Para** garantizar trazabilidad  
-
-**Criterios de aceptación:**
-- Registro de inserciones, cambios y eliminaciones  
-- Logs inalterables  
-- Consulta de historial  
-
-### HU-14: Gestión de documentos digitales
-**Como** usuario  
-**Quiero** subir archivos adjuntos  
-**Para** almacenar documentación del crédito  
-
-**Criterios de aceptación:**
-- Almacenamiento seguro  
-- Validación de archivos  
-- Acceso restringido  
+- Las historias están redactadas bajo el enfoque ágil (Scrum), priorizando el valor para el usuario.
+- Cada historia representa una funcionalidad independiente que puede desarrollarse en iteraciones (Sprints).
+- Se consideran actores reales del sistema según el documento del BDP.
