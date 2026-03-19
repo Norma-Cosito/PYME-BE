@@ -8,7 +8,6 @@
 | **Problema a Resolver** | En la Unidad Educativa Martin Cárdenas se presenta una limitación en el acceso a instrumentos musicales físicos debido a su alto costo, mantenimiento y disponibilidad reducida. Esto dificulta el aprendizaje práctico de los estudiantes en el área musical, generando una formación incompleta y poco interactiva. |
 | **Objetivo Principal** | Desarrollar e implementar un sistema digital interactivo que emule instrumentos musicales, permitiendo a los estudiantes practicar, aprender y experimentar con sonidos en tiempo real mediante una plataforma accesible, intuitiva y educativa. |
 
----
 
 ## 1.2. Descripción General
 
@@ -18,7 +17,6 @@ El sistema estará diseñado bajo una arquitectura web, garantizando accesibilid
 
 Asimismo, la implementación del sistema contribuirá a mejorar la calidad de enseñanza musical, promoviendo el uso de tecnologías digitales en la educación y fomentando el aprendizaje práctico, dinámico e inclusivo.
 
----
 
 ## 1.3. Beneficios Esperados
 
