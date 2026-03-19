@@ -1,55 +1,57 @@
-# Plataforma Virtual de Crédito Pyme y Empresa - BDP S.A.M.
+# Plataforma Virtual para la Digitalización del Proceso Crediticio - BDP S.A.M.
 
-## 1. Visión General
-Este repositorio contiene la documentación y activos de la **Consultoría para la Provisión de Software para PYME y BE**. El proyecto digitaliza el ciclo de vida del crédito productivo, integrando herramientas avanzadas de scoring y conexión directa con el CORE bancario del Banco de Desarrollo Productivo.
+## 1. Cuadro Resumen del Proyecto (Matriz de Control)
 
-### Objetivos Estratégicos
-* **Agilidad Operativa:** Eliminar cuellos de botella mediante la automatización de formularios y flujos de aprobación.
-* **Especialización Productiva:** Implementar calculadoras biológicas y sectoriales (agrícola/pecuaria).
-* **Seguridad Bancaria:** Garantizar la trazabilidad total mediante auditoría inalterable y cifrado de grado financiero.
+[cite_start]Este cuadro consolida los aspectos más importantes de la planificación, los responsables y los objetivos estratégicos del software. [cite: 4]
 
----
-
-## 2. Matriz de Interesados (Stakeholders)
-
-| Rol | Identidad / Cargo | Influencia | Expectativa Clave |
-| :--- | :--- | :--- | :--- |
-| **Patrocinador** | Alta Gerencia BDP S.A.M. | Alta | Retorno de inversión y eficiencia en plazos. |
-| **Usuario Final** | Analistas de Crédito | Media | Reducción de carga manual y facilidad de uso. |
-| **Equipo Técnico** | Gestor de Pilas & Devs | Alta | Requerimientos técnicos claros y calidad de código. |
-
-**Cuerpo Técnico:** Miguel Angel Chura (Gestor), Norma Mendoza, Nicole Arratia, Roger Huarachi, Kevin Rocha, Beymar Castillo.
-
----
-
-## 3. Arquitectura y Requerimientos
-
-### Pilares Técnicos (Stack & RNF)
-* **Arquitectura:** Modular con base de datos PostgreSQL.
-* **Integración:** Comunicación segura vía API-REST (JWT, JSON, HATEOAS).
-* **Disponibilidad:** Estrategia **Offline-First** para trabajo de campo sin conexión.
-* **Auditoría:** Logs con protección WORM (inalterables).
-
-### Funcionalidades Principales
-1. **Validación de Roles:** Control de acceso basado en RBAC.
-2. **Evaluación Productiva:** Simulación de escenarios de mercado y precios.
-3. **Gestión de Garantías:** Conexión dinámica entre prendas pecuarias y capacidad de pago.
-4. **Reportes Automáticos:** Generación de resúmenes de comité en PDF y Excel.
-
----
-
-## 4. Cronograma de Ejecución (260 Días)
-
-| Fase | Hito de Control | Entregable Principal |
+| Categoría | Detalle Clave | Observaciones / Metas |
 | :--- | :--- | :--- |
-| **01** | Análisis y Diseño | Maquetado de UX/UI y flujos de procesos. |
-| **02** | Desarrollo e Integración | Módulos de crédito y conexión al CORE. |
-| **03** | SandBox y Pruebas | Validación operativa y capacitación "Aprender Haciendo". |
-| **04** | Paso a Producción | Transferencia tecnológica y cierre de proyecto. |
+| **Nombre del Proyecto** | [cite_start]Consultoría para la Provisión de Software para PYME y BE [cite: 4] | [cite_start]Digitalización integral del proceso crediticio. [cite: 4] |
+| **Presupuesto Total** | **Bs. [cite_start]500.000,00** [cite: 51] | [cite_start]Pago dividido en 4 hitos (20%, 35%, 25%, 20%). [cite: 52] |
+| **Plazo Total** | [cite_start]**260 días hábiles** [cite: 48] | [cite_start]Desde el análisis hasta el "Go-live" en producción. [cite: 48] |
+| **Tecnología Clave** | [cite_start]API REST, PostgreSQL, PWA [cite: 36, 38] | [cite_start]Integración al CORE bancario y funcionamiento offline. [cite: 36] |
+| **Propiedad** | [cite_start]BDP S.A.M. [cite: 42] | [cite_start]El código fuente es propiedad absoluta del banco. [cite: 42] |
 
 ---
 
-## 5. Aspectos Legales
-* **Presupuesto:** Bs. 500.000,00 bajo modalidad de productos entregables.
-* **Propiedad Intelectual:** El código fuente y la documentación son propiedad exclusiva del **BDP S.A.M.**.
-* **Confidencialidad:** Sujeto a acuerdos de no divulgación (NDA).
+## 2. Matriz de Stakeholders (Interesados)
+
+[cite_start]A continuación, se detallan los actores clave que participan en el proyecto y sus expectativas principales. [cite: 5, 6]
+
+| Rol | Nombre / Cargo | Influencia | Expectativa Principal |
+| :--- | :--- | :--- | :--- |
+| **Cliente / Patrocinador** | [cite_start]Alta Gerencia del BDP S.A.M. [cite: 6] | [cite_start]**Alto** [cite: 6] | [cite_start]Implementación en plazo, presupuesto y mejora de eficiencia. [cite: 6] |
+| **Usuario Final** | [cite_start]Analistas de crédito y Funcionarios [cite: 6] | [cite_start]**Medio** [cite: 6] | [cite_start]Plataforma fácil de usar que elimine procesos manuales. [cite: 6] |
+| **Equipo Técnico** | [cite_start]Miguel A. Chura (Gestor) + Equipo Dev [cite: 6] | [cite_start]**Alto** [cite: 6] | [cite_start]Requerimientos claros y entrega de software de alta calidad. [cite: 6] |
+
+---
+
+## 3. Resumen de Ejecución (Hitos y Entregables)
+
+[cite_start]El cronograma se divide en cuatro grandes fases de trabajo para asegurar una implementación controlada. [cite: 44]
+
+| Fase | Descripción de Actividades | Plazo (Días Hábiles) |
+| :--- | :--- | :--- |
+| **Fase 1: Análisis** | [cite_start]Maquetado de formularios y definición de transiciones. [cite: 45] | [cite_start]Hasta 40 días. [cite: 45] |
+| **Fase 2: Desarrollo** | [cite_start]Construcción de módulos y conexión API al CORE. [cite: 46] | [cite_start]Hasta 140 días. [cite: 46] |
+| **Fase 3: Pruebas** | [cite_start]Uso de **SandBox**, validación de calculadoras y capacitación. [cite: 47] | [cite_start]Hasta 240 días. [cite: 47] |
+| **Fase 4: Producción** | [cite_start]Paso a producción (Go-live) y transferencia tecnológica. [cite: 48] | [cite_start]Hasta 260 días. [cite: 48] |
+
+---
+
+## 4. Requerimientos Destacados
+
+### Funcionales (RF)
+* **Integración:** Comunicación vía API REST con el CORE bancario. [cite: 34]
+* [cite_start]**Automatización:** Generación automática de flujos, balances e índices financieros. [cite: 34]
+* [cite_start]**Sectorial:** Evaluación especializada para sectores agrícolas y pecuarios. [cite: 34]
+
+### No Funcionales (RNF)
+* **Offline-First:** Operación continua en campo sin conexión a internet. [cite: 36]
+* [cite_start]**Seguridad:** Registro de logs de auditoría inalterables (protección WORM). [cite: 36]
+* [cite_start]**Escalabilidad:** Soporte para un mínimo de 500 usuarios concurrentes. [cite: 36]
+
+---
+
+## 5. Confidencialidad y Propiedad
+[cite_start]Toda la información técnica y de negocio contenida en este repositorio es estrictamente confidencial. [cite: 43] [cite_start]El código fuente desarrollado es propiedad exclusiva del **BDP S.A.M.** [cite: 42]
