@@ -1,6 +1,6 @@
-# 4. Requerimientos Funcionales y Técnicos (Basados en el DBC)
+# 5. Requerimientos Funcionales y Técnicos (Basados en el DBC)
 
-## 4.1. Top Requerimientos Funcionales (RF)
+## 5.1. Top Requerimientos Funcionales (RF)
 
 | ID     | Descripción del Requerimiento Funcional                                                                 | Prioridad / Criterio de Éxito                          |
 |--------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
