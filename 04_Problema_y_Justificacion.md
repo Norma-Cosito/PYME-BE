@@ -4,7 +4,7 @@
 
 El Banco de Desarrollo Productivo (BDP S.A.M.) presenta un proceso crediticio orientado a Pyme y Banca Empresa que actualmente requiere mayor agilidad, eficiencia y digitalización.
 
-En la situación actual, el proceso implica el uso de múltiples formularios físicos, evaluaciones manuales y tiempos prolongados de análisis, lo que genera demoras en la aprobación de créditos, incremento en la carga operativa del personal y una limitada trazabilidad de la información.
+En la situacion actual, el proceso implica el uso de múltiples formularios físicos, evaluaciones manuales y tiempos prolongados de análisis, lo que genera demoras en la aprobación de créditos, incremento en la carga operativa del personal y una limitada trazabilidad de la información.
 
 Además, la naturaleza del sector productivo introduce una mayor complejidad en la evaluación crediticia, ya que los clientes no cuentan con ingresos fijos, sino que dependen de ciclos biológicos y factores externos como el clima y el mercado. Esto dificulta la correcta estimación del riesgo y la capacidad de pago.
 
