@@ -10,7 +10,6 @@
 | **Problema a Resolver** | El Banco de Desarrollo Productivo (BDP S.A.M.) presenta un proceso crediticio para Pyme y Banca Empresa que requiere mayor agilidad, eficiencia y digitalización. Actualmente, el proceso implica múltiples formularios físicos, evaluaciones manuales y tiempos prolongados de análisis, lo que genera demoras en la aprobación de créditos, mayor carga operativa y una limitada trazabilidad de la información. Además, se necesita integrar herramientas tecnológicas como scoring crediticio, monitoreo de transacciones y conexión con el sistema CORE bancario, garantizando seguridad, confidencialidad y cumplimiento normativo. |
 | **Objetivo Principal** | Desarrollar e implementar una plataforma virtual que digitalice y optimice el proceso crediticio para Pyme y Banca Empresa del BDP S.A.M., permitiendo una gestión más ágil, segura y eficiente, integrada al sistema CORE del banco y alineada a las tendencias tecnológicas actuales. |
 
----
 
 ### 1.2 Matriz de Stakeholders
 
@@ -20,7 +19,6 @@
 | Usuario Final | Analistas de crédito y Funcionarios | Medio | Contar con una plataforma fácil de usar que agilice la evaluación, reduzca la carga operativa manual y evite el uso de hojas de cálculo externas. |
 | Equipo Técnico | Miguel Angel Chura Condori (Gestor de Pilas) <br> Norma Mendoza Layme (Dev) <br> Nicole Abigail Arratia Chipana (Dev) <br> Roger Huarachi Rojas (Dev) <br> Kevin Jhonatan Rocha (Dev) <br> Beymar Castillo Cordova (Dev) | Alto | Contar con requerimientos claros, acceso a los ambientes de prueba a tiempo, y entregar un software de alta calidad que cumpla con el cronograma. |
 
----
 
 ## 2. Antecedentes y Problema (El "Por qué")
 
@@ -44,7 +42,6 @@
 - El banco asegura su cartera  
 - El país produce más alimentos  
 
----
 
 ## 3. Alcance del Proyecto (El "Qué")
 
@@ -58,8 +55,6 @@
 
 **Restricción de Alcance:**  
 No se desarrollará aplicación móvil nativa independiente.
-
----
 
 ## 4. Requerimientos Funcionales y Técnicos
 
@@ -80,7 +75,6 @@ No se desarrollará aplicación móvil nativa independiente.
 | RF-11 | Scoring automático | Should |
 | RF-12 | Monitoreo en tiempo real | Should |
 
----
 
 ### 4.2 Requerimientos No Funcionales
 
@@ -92,7 +86,6 @@ No se desarrollará aplicación móvil nativa independiente.
 | RNF-04 | Integración | API segura |
 | RNF-05 | Seguridad | Cifrado + WORM |
 
----
 
 ## 5. Estrategia de Implementación
 
@@ -100,14 +93,12 @@ No se desarrollará aplicación móvil nativa independiente.
 - Capacitación en Sandbox  
 - Control de cambios por ambientes  
 
----
 
 ## 6. Propiedad y Confidencialidad
 
 - Código fuente propiedad del BDP  
 - Información confidencial  
 
----
 
 ## 7. Cronograma
 
@@ -116,7 +107,6 @@ No se desarrollará aplicación móvil nativa independiente.
 - Fase 3: 240 días  
 - Fase 4: 260 días  
 
----
 
 ## 8. Presupuesto
 
