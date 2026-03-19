@@ -15,7 +15,3 @@
 - **Usuarios Finales:** Son fundamentales para la adopción del sistema, ya que interactúan directamente con la plataforma.
 - **Equipo Técnico:** Responsable del desarrollo, implementación y calidad del sistema.
 
-
-## 3.3. Conclusión
-
-La correcta identificación de los stakeholders permite alinear los objetivos del sistema PYME-BE con las necesidades del Banco de Desarrollo Productivo, garantizando su éxito y sostenibilidad.
