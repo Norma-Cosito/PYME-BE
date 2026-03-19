@@ -1,6 +1,6 @@
-# 8. Estrategia de Implementación y Capacitación
+# 9. Estrategia de Implementación y Capacitación
 
-## 8.1. Metodología de Implementación
+## 9.1. Metodología de Implementación
 
 El desarrollo del sistema se llevará a cabo mediante una metodología ágil, permitiendo una entrega progresiva de funcionalidades y una adaptación continua a los requerimientos del proyecto.
 
@@ -13,7 +13,7 @@ Asimismo, se utilizarán entornos diferenciados para asegurar la calidad del sof
 - **Entorno de Producción:** Para la operación final del sistema dentro del BDP S.A.M.
 
 
-## 8.2. Equipo de Trabajo
+## 9.2. Equipo de Trabajo
 
 El proyecto será desarrollado por un equipo técnico especializado en tecnologías web, conformado por:
 
@@ -24,7 +24,7 @@ El proyecto será desarrollado por un equipo técnico especializado en tecnolog�
 El equipo trabajará de forma colaborativa, asegurando la correcta interpretación de los requerimientos y el cumplimiento de los objetivos del proyecto.
 
 
-## 8.3. Estrategia de Capacitación
+## 9.3. Estrategia de Capacitación
 
 Se implementará una estrategia de capacitación basada en el enfoque "aprender haciendo", orientada a los usuarios finales del sistema.
 
@@ -38,7 +38,7 @@ Para ello se contemplan las siguientes acciones:
 Esta estrategia permitirá que los usuarios adquieran experiencia directa en el uso de la plataforma, facilitando su adopción.
 
 
-## 8.4. Control de Cambios
+## 9.4. Control de Cambios
 
 Se establecerá un control de cambios riguroso para garantizar la estabilidad del sistema y la correcta gestión de modificaciones.
 
