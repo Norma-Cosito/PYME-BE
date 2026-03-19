@@ -16,26 +16,26 @@ Este cuadro consolida los aspectos más importantes de la planificación, los re
 
 ## 2. Matriz de Stakeholders (Interesados)
 
-[cite_start]A continuación, se detallan los actores clave que participan en el proyecto y sus expectativas principales. [cite: 5, 6]
+A continuación, se detallan los actores clave que participan en el proyecto y sus expectativas principales.
 
 | Rol | Nombre / Cargo | Influencia | Expectativa Principal |
 | :--- | :--- | :--- | :--- |
-| **Cliente / Patrocinador** | [cite_start]Alta Gerencia del BDP S.A.M. [cite: 6] | [cite_start]**Alto** [cite: 6] | [cite_start]Implementación en plazo, presupuesto y mejora de eficiencia. [cite: 6] |
-| **Usuario Final** | [cite_start]Analistas de crédito y Funcionarios [cite: 6] | [cite_start]**Medio** [cite: 6] | [cite_start]Plataforma fácil de usar que elimine procesos manuales. [cite: 6] |
-| **Equipo Técnico** | [cite_start]Miguel A. Chura (Gestor) + Equipo Dev [cite: 6] | [cite_start]**Alto** [cite: 6] | [cite_start]Requerimientos claros y entrega de software de alta calidad. [cite: 6] |
+| **Cliente / Patrocinador** | Alta Gerencia del BDP S.A.M. | **Alto** | Implementación en plazo, presupuesto y mejora de eficiencia. |
+| **Usuario Final** | Analistas de crédito y Funcionarios | **Medio** | Plataforma fácil de usar que elimine procesos manuales. |
+| **Equipo Técnico** | Miguel A. Chura (Gestor) + Equipo Dev | **Alto** | Requerimientos claros y entrega de software de alta calidad. |
 
 ---
 
 ## 3. Resumen de Ejecución (Hitos y Entregables)
 
-[cite_start]El cronograma se divide en cuatro grandes fases de trabajo para asegurar una implementación controlada. [cite: 44]
+El cronograma se divide en cuatro grandes fases de trabajo para asegurar una implementación controlada.
 
 | Fase | Descripción de Actividades | Plazo (Días Hábiles) |
 | :--- | :--- | :--- |
-| **Fase 1: Análisis** | [cite_start]Maquetado de formularios y definición de transiciones. [cite: 45] | [cite_start]Hasta 40 días. [cite: 45] |
-| **Fase 2: Desarrollo** | [cite_start]Construcción de módulos y conexión API al CORE. [cite: 46] | [cite_start]Hasta 140 días. [cite: 46] |
-| **Fase 3: Pruebas** | [cite_start]Uso de **SandBox**, validación de calculadoras y capacitación. [cite: 47] | [cite_start]Hasta 240 días. [cite: 47] |
-| **Fase 4: Producción** | [cite_start]Paso a producción (Go-live) y transferencia tecnológica. [cite: 48] | [cite_start]Hasta 260 días. [cite: 48] |
+| **Fase 1: Análisis** | Maquetado de formularios y definición de transiciones. | Hasta 40 días. |
+| **Fase 2: Desarrollo** | Construcción de módulos y conexión API al CORE. | Hasta 140 días. |
+| **Fase 3: Pruebas** | Uso de **SandBox**, validación de calculadoras y capacitación. | Hasta 240 días. |
+| **Fase 4: Producción** | Paso a producción (Go-live) y transferencia tecnológica. | Hasta 260 días. |
 
 ---
 
