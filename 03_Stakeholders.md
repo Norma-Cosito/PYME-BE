@@ -2,7 +2,7 @@
 
 ## 1. Cuadro Resumen del Proyecto (Matriz de Control)
 
-[cite_start]Este cuadro consolida los aspectos más importantes de la planificación, los responsables y los objetivos estratégicos del software. [cite: 4]
+Este cuadro consolida los aspectos más importantes de la planificación, los responsables y los objetivos estratégicos del software.
 
 | Categoría | Detalle Clave | Observaciones / Metas |
 | :--- | :--- | :--- |
