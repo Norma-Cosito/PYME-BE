@@ -8,7 +8,7 @@ El sistema será entregado de manera completa, incluyendo todos los recursos nec
 
 Asimismo, el desarrollo se realizará utilizando tecnologías y herramientas que permitan la transferencia del conocimiento, facilitando la continuidad del sistema por parte del equipo técnico del banco.
 
-## 10.2. Confidencialidad
+## 10.2. Confidencialidad 🔏 
 
 Toda la información utilizada durante el desarrollo del sistema será considerada confidencial, incluyendo datos técnicos, procesos internos, información de clientes y cualquier otro elemento relacionado con la operativa del BDP S.A.M.
 
