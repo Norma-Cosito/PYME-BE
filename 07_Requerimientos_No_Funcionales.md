@@ -1,4 +1,4 @@
-# 4.2. Top 5 Requerimientos No Funcionales (RNF Clave)
+# 7. Top 5 Requerimientos No Funcionales (RNF Clave)
 
 | ID     | Categoría        | Descripción Técnica                                                                 | Métrica de Éxito                                              |
 |--------|------------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------|
