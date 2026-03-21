@@ -1,69 +1,80 @@
-# Documento de Especificación de Historias de Usuario
+# Documento de Especificación: Historias de Usuario
 
-Este documento detalla los requerimientos del sistema organizados por **Épicas**, describiendo las **Historias de Usuario**, su nivel de prioridad según la técnica **MoSCoW** y los **Criterios de Aceptación (Definición de Hecho)**.
-
----
-
-## Estructura del Documento
-
-- **Épica**
-- **Historia de Usuario**
-- **Prioridad (MoSCoW)**
-- **Criterio de Aceptación**
+Este documento detalla los requerimientos del sistema organizados por **Épicas**, describiendo las **Historias de Usuario**, su nivel de prioridad según la técnica **MoSCoW** y los **Criterios de Aceptación (Definición de Hecho)** para cada una.
 
 ---
 
-## Épica EP01: Seguridad y Acceso
+## Épica: Seguridad y Acceso (EP01)
 
-| ID    | Historia de Usuario | Prioridad | Criterio de Aceptación |
-|-------|----------------------|-----------|-------------------------|
-| HU-01 | Como usuario, quiero un login seguro con roles para acceder solo a mis funciones. | Must | Validación de credenciales, bloqueo tras 3 intentos y JWT implementado. |
-| HU-02 | Como auditor, quiero un log inalterable de cada acción para cumplir con la normativa. | Must | Registro automático de ID, fecha y acción en DB (protección WORM). |
+### HU-01: Control de Acceso y Roles
+- **Historia de Usuario:** Como usuario, quiero un login seguro con roles para acceder solo a mis funciones.
+- **Prioridad (MoSCoW):** Must
+- **Criterio de Aceptación:** Validación de credenciales, bloqueo tras 3 intentos y JWT implementado.
 
----
-
-## Épica EP02: Gestión de Solicitudes
-
-| ID    | Historia de Usuario | Prioridad | Criterio de Aceptación |
-|-------|----------------------|-----------|-------------------------|
-| HU-03 | Como analista, quiero cargar documentos digitales para eliminar el uso de papel. | Must | Almacenamiento seguro y visualización fluida de adjuntos. |
-| HU-04 | Como analista, quiero un checklist inteligente para saber si la documentación está completa. | Must | Bloqueo de avance de etapa si faltan archivos obligatorios. |
+### HU-02: Trazabilidad y Auditoría
+- **Historia de Usuario:** Como auditor, quiero un log inalterable de cada acción para cumplir con la normativa.
+- **Prioridad (MoSCoW):** Must
+- **Criterio de Aceptación:** Registro automático de ID, fecha y acción en DB (protección WORM).
 
 ---
 
-## Épica EP03: Evaluación Técnica
+## Épica: Gestión de Solicitudes (EP02)
 
-| ID    | Historia de Usuario | Prioridad | Criterio de Aceptación |
-|-------|----------------------|-----------|-------------------------|
-| HU-05 | Como analista agropecuario, quiero proyectar el ciclo de vida del hato ganadero. | Must | Cálculos automáticos de nacimientos, recría y engorde según parámetros. |
-| HU-06 | Como analista agrícola, quiero simular escenarios (precios/clima) mediante "Supuestos". | Should | Motor de reglas parametrizable sin cambiar código fuente. |
+### HU-03: Digitalización de Documentos
+- **Historia de Usuario:** Como analista, quiero cargar documentos digitales para eliminar el uso de papel.
+- **Prioridad (MoSCoW):** Must
+- **Criterio de Aceptación:** Almacenamiento seguro y visualización fluida de adjuntos.
 
----
-
-## Épica EP04: Integraciones Inteligentes
-
-| ID    | Historia de Usuario | Prioridad | Criterio de Aceptación |
-|-------|----------------------|-----------|-------------------------|
-| HU-07 | Como sistema, quiero conectarme a la API de la Fintech aliada para obtener el scoring crediticio. | Must | Consumo exitoso de la API externa y visualización del puntaje en la ficha del cliente. |
-| HU-08 | Como sistema, quiero sincronizar datos con el CORE bancario vía API REST. | Must | Intercambio de JSON validado y sin pérdida de integridad de datos. |
+### HU-04: Validación Documental
+- **Historia de Usuario:** Como analista, quiero un checklist inteligente para saber si la documentación está completa.
+- **Prioridad (MoSCoW):** Must
+- **Criterio de Aceptación:** Bloqueo de avance de etapa si faltan archivos obligatorios.
 
 ---
 
-## Épica EP05: Movilidad - Offline
+## Épica: Evaluación Técnica (EP03)
 
-| ID    | Historia de Usuario | Prioridad | Criterio de Aceptación |
-|-------|----------------------|-----------|-------------------------|
-| HU-09 | Como analista de campo, quiero registrar datos sin internet para sincronizarlos después. | Must | Uso de PWA/IndexedDB para persistencia local y sincronización automática. |
+### HU-05: Proyección Ganadera
+- **Historia de Usuario:** Como analista agropecuario, quiero proyectar el ciclo de vida del hato ganadero.
+- **Prioridad (MoSCoW):** Must
+- **Criterio de Aceptación:** Cálculos automáticos de nacimientos, recría y engorde según parámetros.
+
+### HU-06: Simulación de Escenarios Agrícolas
+- **Historia de Usuario:** Como analista agrícola, quiero simular escenarios (precios/clima) mediante "Supuestos".
+- **Prioridad (MoSCoW):** Should
+- **Criterio de Aceptación:** Motor de reglas parametrizable sin cambiar código fuente.
+
+---
+
+## Épica: Integraciones Inteligentes (EP04)
+
+### HU-07: Scoring Crediticio
+- **Historia de Usuario:** Como sistema, quiero conectarme a la API de la Fintech aliada para obtener el scoring crediticio.
+- **Prioridad (MoSCoW):** Must
+- **Criterio de Aceptación:** Consumo exitoso de la API externa y visualización del puntaje en la ficha del cliente.
+
+### HU-08: Sincronización con CORE Bancario
+- **Historia de Usuario:** Como sistema, quiero sincronizar datos con el CORE bancario vía API REST.
+- **Prioridad (MoSCoW):** Must
+- **Criterio de Aceptación:** Intercambio de JSON validado y sin pérdida de integridad de datos.
 
 ---
 
-## Épica EP06: Salidas y Reportes
+## Épica: Movilidad - Offline (EP05)
 
-| ID    | Historia de Usuario | Prioridad | Criterio de Aceptación |
-|-------|----------------------|-----------|-------------------------|
-| HU-10 | Como jefe de comité, quiero generar un "Resumen Ejecutivo" automático en PDF/Excel. | Must | Reporte fiel a los datos ingresados, exportable con un solo clic. |
+### HU-09: Trabajo de Campo sin Conexión
+- **Historia de Usuario:** Como analista de campo, quiero registrar datos sin internet para sincronizarlos después.
+- **Prioridad (MoSCoW):** Must
+- **Criterio de Aceptación:** Uso de PWA/IndexedDB para persistencia local y sincronización automática.
 
 ---
+
+## Épica: Salidas y Reportes (EP06)
+
+### HU-10: Generación de Resumen Ejecutivo
+- **Historia de Usuario:** Como jefe de comité, quiero generar un "Resumen Ejecutivo" automático en PDF/Excel.
+- **Prioridad (MoSCoW):** Must
+- **Criterio de Aceptación:** Reporte fiel a los datos ingresados, exportable con un solo clic.
 
 ## Tabla Resumen General
 
@@ -82,19 +93,4 @@ Este documento detalla los requerimientos del sistema organizados por **Épicas*
 
 ---
 
-## Prioridades MoSCoW
 
-| Prioridad | Descripción |
-|-----------|-------------|
-| Must | Requerimiento obligatorio para el funcionamiento del sistema. |
-| Should | Requerimiento importante, pero no crítico para la primera versión. |
-| Could | Requerimiento deseable si existen recursos y tiempo. |
-| Won't | Requerimiento descartado para esta iteración. |
-
----
-
-## Observaciones
-
-- Las historias de usuario están agrupadas por épicas funcionales.
-- La prioridad ha sido asignada usando la técnica **MoSCoW**.
-- Los criterios de aceptación definen cuándo una historia puede considerarse completada.
