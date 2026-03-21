@@ -1,75 +1,100 @@
-# 1. Historias de Usuario
+# Documento de Especificación de Historias de Usuario
 
-## 1.1. Seguridad y Acceso (EP01)
-
-| ID     | Concepto                | Descripción |
-|--------|------------------------|-------------|
-| HU-01  | **Control de Acceso y Roles** | Como usuario, quiero un login seguro con roles para acceder solo a mis funciones. |
-|        | **Prioridad**           | Must |
-|        | **Criterio de Aceptación** | Validación de credenciales, bloqueo tras 3 intentos y JWT implementado. |
-
-| HU-02  | **Trazabilidad y Auditoría** | Como auditor, quiero un log inalterable de cada acción para cumplir con la normativa. |
-|        | **Prioridad**           | Must |
-|        | **Criterio de Aceptación** | Registro automático de ID, fecha y acción en DB (protección WORM). |
+Este documento detalla los requerimientos del sistema organizados por **Épicas**, describiendo las **Historias de Usuario**, su nivel de prioridad según la técnica **MoSCoW** y los **Criterios de Aceptación (Definición de Hecho)**.
 
 ---
 
-## 1.2. Gestión de Solicitudes (EP02)
+## Estructura del Documento
 
-| ID     | Concepto                | Descripción |
-|--------|------------------------|-------------|
-| HU-03  | **Digitalización de Documentos** | Como analista, quiero cargar documentos digitales para eliminar el uso de papel. |
-|        | **Prioridad**           | Must |
-|        | **Criterio de Aceptación** | Almacenamiento seguro y visualización fluida de adjuntos. |
-
-| HU-04  | **Validación Documental** | Como analista, quiero un checklist inteligente para saber si la documentación está completa. |
-|        | **Prioridad**           | Must |
-|        | **Criterio de Aceptación** | Bloqueo de avance si faltan archivos obligatorios. |
+- **Épica**
+- **Historia de Usuario**
+- **Prioridad (MoSCoW)**
+- **Criterio de Aceptación**
 
 ---
 
-## 1.3. Evaluación Técnica (EP03)
+## Épica EP01: Seguridad y Acceso
 
-| ID     | Concepto                | Descripción |
-|--------|------------------------|-------------|
-| HU-05  | **Proyección Ganadera** | Como analista agropecuario, quiero proyectar el ciclo de vida del hato ganadero. |
-|        | **Prioridad**           | Must |
-|        | **Criterio de Aceptación** | Cálculos automáticos de nacimientos, recría y engorde. |
-
-| HU-06  | **Simulación de Escenarios** | Como analista agrícola, quiero simular escenarios mediante supuestos. |
-|        | **Prioridad**           | Should |
-|        | **Criterio de Aceptación** | Motor de reglas parametrizable sin modificar código. |
+| ID    | Historia de Usuario | Prioridad | Criterio de Aceptación |
+|-------|----------------------|-----------|-------------------------|
+| HU-01 | Como usuario, quiero un login seguro con roles para acceder solo a mis funciones. | Must | Validación de credenciales, bloqueo tras 3 intentos y JWT implementado. |
+| HU-02 | Como auditor, quiero un log inalterable de cada acción para cumplir con la normativa. | Must | Registro automático de ID, fecha y acción en DB (protección WORM). |
 
 ---
 
-## 1.4. Integraciones Inteligentes (EP04)
+## Épica EP02: Gestión de Solicitudes
 
-| ID     | Concepto                | Descripción |
-|--------|------------------------|-------------|
-| HU-07  | **Scoring Crediticio** | Como sistema, quiero conectarme a la API fintech para obtener el scoring crediticio. |
-|        | **Prioridad**           | Must |
-|        | **Criterio de Aceptación** | Consumo exitoso de API y visualización del puntaje. |
-
-| HU-08  | **Sincronización CORE** | Como sistema, quiero sincronizar datos con el CORE bancario vía API REST. |
-|        | **Prioridad**           | Must |
-|        | **Criterio de Aceptación** | Intercambio JSON sin pérdida de datos. |
+| ID    | Historia de Usuario | Prioridad | Criterio de Aceptación |
+|-------|----------------------|-----------|-------------------------|
+| HU-03 | Como analista, quiero cargar documentos digitales para eliminar el uso de papel. | Must | Almacenamiento seguro y visualización fluida de adjuntos. |
+| HU-04 | Como analista, quiero un checklist inteligente para saber si la documentación está completa. | Must | Bloqueo de avance de etapa si faltan archivos obligatorios. |
 
 ---
 
-## 1.5. Movilidad - Offline (EP05)
+## Épica EP03: Evaluación Técnica
 
-| ID     | Concepto                | Descripción |
-|--------|------------------------|-------------|
-| HU-09  | **Trabajo sin Conexión** | Como analista de campo, quiero registrar datos sin internet para sincronizarlos después. |
-|        | **Prioridad**           | Must |
-|        | **Criterio de Aceptación** | Uso de PWA + IndexedDB y sincronización automática. |
+| ID    | Historia de Usuario | Prioridad | Criterio de Aceptación |
+|-------|----------------------|-----------|-------------------------|
+| HU-05 | Como analista agropecuario, quiero proyectar el ciclo de vida del hato ganadero. | Must | Cálculos automáticos de nacimientos, recría y engorde según parámetros. |
+| HU-06 | Como analista agrícola, quiero simular escenarios (precios/clima) mediante "Supuestos". | Should | Motor de reglas parametrizable sin cambiar código fuente. |
 
 ---
 
-## 1.6. Salidas y Reportes (EP06)
+## Épica EP04: Integraciones Inteligentes
 
-| ID     | Concepto                | Descripción |
-|--------|------------------------|-------------|
-| HU-10  | **Resumen Ejecutivo** | Como jefe de comité, quiero generar un resumen en PDF/Excel automáticamente. |
-|        | **Prioridad**           | Must |
-|        | **Criterio de Aceptación** | Exportación en un clic y datos consistentes. |
+| ID    | Historia de Usuario | Prioridad | Criterio de Aceptación |
+|-------|----------------------|-----------|-------------------------|
+| HU-07 | Como sistema, quiero conectarme a la API de la Fintech aliada para obtener el scoring crediticio. | Must | Consumo exitoso de la API externa y visualización del puntaje en la ficha del cliente. |
+| HU-08 | Como sistema, quiero sincronizar datos con el CORE bancario vía API REST. | Must | Intercambio de JSON validado y sin pérdida de integridad de datos. |
+
+---
+
+## Épica EP05: Movilidad - Offline
+
+| ID    | Historia de Usuario | Prioridad | Criterio de Aceptación |
+|-------|----------------------|-----------|-------------------------|
+| HU-09 | Como analista de campo, quiero registrar datos sin internet para sincronizarlos después. | Must | Uso de PWA/IndexedDB para persistencia local y sincronización automática. |
+
+---
+
+## Épica EP06: Salidas y Reportes
+
+| ID    | Historia de Usuario | Prioridad | Criterio de Aceptación |
+|-------|----------------------|-----------|-------------------------|
+| HU-10 | Como jefe de comité, quiero generar un "Resumen Ejecutivo" automático en PDF/Excel. | Must | Reporte fiel a los datos ingresados, exportable con un solo clic. |
+
+---
+
+## Tabla Resumen General
+
+| Épica | Nombre de la Épica | ID Historia | Historia de Usuario | Prioridad | Criterio de Aceptación |
+|-------|---------------------|-------------|----------------------|-----------|-------------------------|
+| EP01 | Seguridad y Acceso | HU-01 | Como usuario, quiero un login seguro con roles para acceder solo a mis funciones. | Must | Validación de credenciales, bloqueo tras 3 intentos y JWT implementado. |
+| EP01 | Seguridad y Acceso | HU-02 | Como auditor, quiero un log inalterable de cada acción para cumplir con la normativa. | Must | Registro automático de ID, fecha y acción en DB (protección WORM). |
+| EP02 | Gestión de Solicitudes | HU-03 | Como analista, quiero cargar documentos digitales para eliminar el uso de papel. | Must | Almacenamiento seguro y visualización fluida de adjuntos. |
+| EP02 | Gestión de Solicitudes | HU-04 | Como analista, quiero un checklist inteligente para saber si la documentación está completa. | Must | Bloqueo de avance de etapa si faltan archivos obligatorios. |
+| EP03 | Evaluación Técnica | HU-05 | Como analista agropecuario, quiero proyectar el ciclo de vida del hato ganadero. | Must | Cálculos automáticos de nacimientos, recría y engorde según parámetros. |
+| EP03 | Evaluación Técnica | HU-06 | Como analista agrícola, quiero simular escenarios (precios/clima) mediante "Supuestos". | Should | Motor de reglas parametrizable sin cambiar código fuente. |
+| EP04 | Integraciones Inteligentes | HU-07 | Como sistema, quiero conectarme a la API de la Fintech aliada para obtener el scoring crediticio. | Must | Consumo exitoso de la API externa y visualización del puntaje en la ficha del cliente. |
+| EP04 | Integraciones Inteligentes | HU-08 | Como sistema, quiero sincronizar datos con el CORE bancario vía API REST. | Must | Intercambio de JSON validado y sin pérdida de integridad de datos. |
+| EP05 | Movilidad - Offline | HU-09 | Como analista de campo, quiero registrar datos sin internet para sincronizarlos después. | Must | Uso de PWA/IndexedDB para persistencia local y sincronización automática. |
+| EP06 | Salidas y Reportes | HU-10 | Como jefe de comité, quiero generar un "Resumen Ejecutivo" automático en PDF/Excel. | Must | Reporte fiel a los datos ingresados, exportable con un solo clic. |
+
+---
+
+## Prioridades MoSCoW
+
+| Prioridad | Descripción |
+|-----------|-------------|
+| Must | Requerimiento obligatorio para el funcionamiento del sistema. |
+| Should | Requerimiento importante, pero no crítico para la primera versión. |
+| Could | Requerimiento deseable si existen recursos y tiempo. |
+| Won't | Requerimiento descartado para esta iteración. |
+
+---
+
+## Observaciones
+
+- Las historias de usuario están agrupadas por épicas funcionales.
+- La prioridad ha sido asignada usando la técnica **MoSCoW**.
+- Los criterios de aceptación definen cuándo una historia puede considerarse completada.
