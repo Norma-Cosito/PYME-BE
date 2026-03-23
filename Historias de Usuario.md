@@ -2,8 +2,6 @@
 
 Este documento detalla los requerimientos del sistema organizados por **Épicas**, describiendo las **Historias de Usuario**, su nivel de prioridad según la técnica **MoSCoW** y los **Criterios de Aceptación (Definición de Hecho)** para cada una.
 
----
-
 ## Épica: Seguridad y Acceso (EP01)
 
 ### HU-01: Control de Acceso y Roles
@@ -15,8 +13,6 @@ Este documento detalla los requerimientos del sistema organizados por **Épicas*
 - **Historia de Usuario:** Como auditor, quiero un log inalterable de cada acción para cumplir con la normativa.
 - **Prioridad (MoSCoW):** Must
 - **Criterio de Aceptación:** Registro automático de ID, fecha y acción en DB (protección WORM).
-
----
 
 ## Épica: Gestión de Solicitudes (EP02)
 
@@ -30,8 +26,6 @@ Este documento detalla los requerimientos del sistema organizados por **Épicas*
 - **Prioridad (MoSCoW):** Must
 - **Criterio de Aceptación:** Bloqueo de avance de etapa si faltan archivos obligatorios.
 
----
-
 ## Épica: Evaluación Técnica (EP03)
 
 ### HU-05: Proyección Ganadera
@@ -43,8 +37,6 @@ Este documento detalla los requerimientos del sistema organizados por **Épicas*
 - **Historia de Usuario:** Como analista agrícola, quiero simular escenarios (precios/clima) mediante "Supuestos".
 - **Prioridad (MoSCoW):** Should
 - **Criterio de Aceptación:** Motor de reglas parametrizable sin cambiar código fuente.
-
----
 
 ## Épica: Integraciones Inteligentes (EP04)
 
@@ -58,16 +50,12 @@ Este documento detalla los requerimientos del sistema organizados por **Épicas*
 - **Prioridad (MoSCoW):** Must
 - **Criterio de Aceptación:** Intercambio de JSON validado y sin pérdida de integridad de datos.
 
----
-
 ## Épica: Movilidad - Offline (EP05)
 
 ### HU-09: Trabajo de Campo sin Conexión
 - **Historia de Usuario:** Como analista de campo, quiero registrar datos sin internet para sincronizarlos después.
 - **Prioridad (MoSCoW):** Must
 - **Criterio de Aceptación:** Uso de PWA/IndexedDB para persistencia local y sincronización automática.
-
----
 
 ## Épica: Salidas y Reportes (EP06)
 
@@ -90,7 +78,4 @@ Este documento detalla los requerimientos del sistema organizados por **Épicas*
 | EP04 | Integraciones Inteligentes | HU-08 | Como sistema, quiero sincronizar datos con el CORE bancario vía API REST. | Must | Intercambio de JSON validado y sin pérdida de integridad de datos. |
 | EP05 | Movilidad - Offline | HU-09 | Como analista de campo, quiero registrar datos sin internet para sincronizarlos después. | Must | Uso de PWA/IndexedDB para persistencia local y sincronización automática. |
 | EP06 | Salidas y Reportes | HU-10 | Como jefe de comité, quiero generar un "Resumen Ejecutivo" automático en PDF/Excel. | Must | Reporte fiel a los datos ingresados, exportable con un solo clic. |
-
----
-
 
